@@ -1,8 +1,7 @@
 class homepage {
 
 	file { ['/var/www/', '/var/www/homepage']:
-		ensure	=> directory,
-		owner => 'nginx'
+		ensure	=> directory
 	}
 
 	file { '/var/www/homepage/index.html':
