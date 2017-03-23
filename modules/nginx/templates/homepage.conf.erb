@@ -1,5 +1,9 @@
 server {
+	listen 81 default_server;
+	listen [::]:81 default_server ipv6only=on;
+    
     root /www/homepage;
+    index index.html;
 
     location / {
     }
